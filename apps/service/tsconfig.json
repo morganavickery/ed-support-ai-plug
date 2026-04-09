@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "references": [
+    {
+      "path": "../../packages/shared-types"
+    },
+    {
+      "path": "../../packages/prompt-builder"
+    },
+    {
+      "path": "../../packages/model-adapter"
+    }
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}

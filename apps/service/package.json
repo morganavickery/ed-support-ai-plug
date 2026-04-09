@@ -1,0 +1,18 @@
+{
+  "name": "@ed-support-ai-plug/service",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@ed-support-ai-plug/model-adapter": "workspace:*",
+    "@ed-support-ai-plug/prompt-builder": "workspace:*",
+    "@ed-support-ai-plug/shared-types": "workspace:*",
+    "fastify": "^4.28.1"
+  }
+}

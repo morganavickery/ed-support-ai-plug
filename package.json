@@ -1,0 +1,23 @@
+{
+  "name": "ed-support-ai-plug",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty",
+    "dev:service": "npm run build && npm run dev --workspace @ed-support-ai-plug/service",
+    "start:service": "npm run build && npm run start --workspace @ed-support-ai-plug/service"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
