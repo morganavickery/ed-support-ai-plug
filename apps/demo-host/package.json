@@ -1,5 +1,5 @@
 {
-  "name": "@ed-support-ai-plug/service",
+  "name": "@ed-support-ai-plug/demo-host",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -10,9 +10,9 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@ed-support-ai-plug/model-adapter": "0.1.0",
-    "@ed-support-ai-plug/prompt-builder": "0.1.0",
+    "@ed-support-ai-plug/sdk": "0.1.0",
     "@ed-support-ai-plug/shared-types": "0.1.0",
-    "fastify": "^4.28.1"
+    "fastify": "^4.28.1",
+    "zod": "^3.23.8"
   }
 }

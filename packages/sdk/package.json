@@ -14,6 +14,6 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@ed-support-ai-plug/shared-types": "workspace:*"
+    "@ed-support-ai-plug/shared-types": "0.1.0"
   }
 }

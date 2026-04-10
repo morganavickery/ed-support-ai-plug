@@ -15,6 +15,9 @@
     },
     {
       "path": "./apps/service"
+    },
+    {
+      "path": "./apps/demo-host"
     }
   ]
 }
