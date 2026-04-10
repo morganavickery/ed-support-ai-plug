@@ -5,6 +5,7 @@ a plug-and-play add-on for educational technology developers for lightweight, lo
 ## Docs
 
 * [V1 architecture](./docs/v1-architecture.md)
+* [Development plan](./docs/development-plan.md)
 
 ## Repo Scaffold
 
@@ -26,6 +27,7 @@ The service is wired to a `mock` model provider by default so the API can be exe
 ## Getting Started
 
 This workspace requires `Node.js >=20`.
+
 
 1. Install dependencies:
 
@@ -59,16 +61,16 @@ npm run dev:preview
 
 Then open:
 
-- service: `http://localhost:3031/health`
-- demo host: `http://localhost:3032`
+* service: `http://localhost:3031/health`
+* demo host: `http://localhost:3032`
 
 The demo host lets you:
 
-- load MEME and Net.Create style presets
-- create a session and thread
-- record artifact snapshots and activity events
-- chat against the live local AI service
-- inspect the assistant reply plus teacher-facing metadata
+* load MEME and Net.Create style presets
+* create a session and thread
+* record artifact snapshots and activity events
+* chat against the live local AI service
+* inspect the assistant reply plus teacher-facing metadata
 
 ## Environment
 
@@ -88,9 +90,9 @@ MODEL_PROVIDER=ollama OLLAMA_MODEL=gemma3:4b npm run dev:service
 
 The demo host supports:
 
-- `DEMO_HOST_HOST` default `0.0.0.0`
-- `DEMO_HOST_PORT` default `3032`
-- `DEMO_SERVICE_BASE_URL` default `http://127.0.0.1:3031`
+* `DEMO_HOST_HOST` default `0.0.0.0`
+* `DEMO_HOST_PORT` default `3032`
+* `DEMO_SERVICE_BASE_URL` default `http://127.0.0.1:3031`
 
 ## Immediate Next Steps
 
@@ -98,3 +100,5 @@ The demo host supports:
 * flesh out the teacher/admin routes
 * add streaming responses and richer trace storage
 * add a persistent scenario library and seeded fixtures for classroom test cases
+
+
